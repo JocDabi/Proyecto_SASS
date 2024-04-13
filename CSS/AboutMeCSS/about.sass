@@ -1,0 +1,75 @@
+@import '../Modulos/_variables'
+@import '../Modulos/_mixins'
+@import '../Modulos/_globales'
+
+#container2
+    display: flex
+    margin-top: 85px
+    gap: 100px
+
+#content
+    display: flex
+    flex-direction: column
+    align-items: start
+
+h1
+    color: $celeste
+    font:
+        size: 50px
+        family:"Signika", sans-serif
+    padding-left: 100px
+
+.parr
+    color: white
+    font: 
+        size: 20px
+        weight: light 
+        family: "Montserrat", sans-serif
+    padding-left: 100px
+    padding-top: 15px 
+
+#prog
+    @extend h1
+    font-size: 30px
+    padding-top: 25px
+
+#contenedor-iconos
+    display: flex
+    padding-top: 40px
+    padding-left: 100px
+    gap: 80px
+
+.iconsLeng
+    cursor: pointer
+    transition: transform 0.3s
+
+.iconsLeng:hover
+    @include transformacionIconos
+
+
+.lenguajes
+    @extend .parr
+    padding-left: 0px
+    text-align: center
+    font-weight: bolder
+
+.doc
+    text-decoration: none
+
+#foto
+    background-color: #00000028
+    border-radius: 100%
+    width: 400px
+    height: 400px
+    overflow: hidden
+    position: relative
+
+    img
+        width: 400px
+        position: absolute
+        right: 50px
+        top: 30px
+
+footer
+    margin-top: 140px
+

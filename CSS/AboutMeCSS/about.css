@@ -37,88 +37,15 @@ nav {
 .redi, .redi2 {
   text-decoration: none;
   font-size: 25px;
-  font-weight: bold;
-  font-family: "Inconsolata", monospace;
+  font-weight: light;
+  font-family: "Montserrat", sans-serif;
   color: white;
+  transition: font-weight 0.3s;
 }
 
 .redi:hover, .redi2:hover {
   color: #06A7E5;
-}
-
-#container {
-  margin-top: 85px;
-  width: 100%;
-  display: flex;
-  gap: 100px;
-}
-
-#descripcion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-h1 {
-  color: white;
-  font-size: 70px;
-  font-family: "Signika", sans-serif;
-  padding-left: 100px;
-}
-
-#ocupacion, #parrafo {
-  color: #06A7E5;
-  font-family: "Inconsolata", monospace;
-  font-size: 40px;
   font-weight: bold;
-  padding-left: 100px;
-  padding-top: 10px;
-}
-
-#parrafo {
-  color: white;
-  font-weight: normal;
-  font-size: 18px;
-  text-align: justify;
-  padding-top: 20px;
-}
-
-#container-btn {
-  display: flex;
-  width: 400px;
-  height: 100px;
-  gap: 60px;
-  margin-top: 30px;
-  margin-left: 100px;
-}
-
-.contacto {
-  width: 150px;
-  height: 60px;
-  border: solid 2px;
-  border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0);
-  border-color: white;
-  cursor: pointer;
-}
-
-.contacto:hover {
-  background-color: #06A7E5;
-  border: none;
-}
-
-.a-btn {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Inconsolata", monospace;
-}
-
-#pc {
-  height: 400px;
-  padding-bottom: 100px;
-  padding-right: 80px;
 }
 
 footer {
@@ -153,13 +80,14 @@ footer {
 #titulo-redes {
   font-size: 25px;
   font-weight: bold;
-  font-family: "Inconsolata", monospace;
+  font-family: "Montserrat", sans-serif;
   color: #06A7E5;
 }
 
 #container-iconos {
   display: flex;
   gap: 40px;
+  padding-left: 20px;
 }
 
 .iconos {
@@ -177,4 +105,82 @@ footer {
   font-weight: bold;
   font-family: "Inconsolata", monospace;
   color: gray;
-}/*# sourceMappingURL=style.css.map */
+}
+
+#container2 {
+  display: flex;
+  margin-top: 85px;
+  gap: 100px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+h1, #prog {
+  color: #06A7E5;
+  font-size: 50px;
+  font-family: "Signika", sans-serif;
+  padding-left: 100px;
+}
+
+.parr, .lenguajes {
+  color: white;
+  font-size: 20px;
+  font-weight: light;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+#prog {
+  font-size: 30px;
+  padding-top: 25px;
+}
+
+#contenedor-iconos {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 100px;
+  gap: 80px;
+}
+
+.iconsLeng {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.iconsLeng:hover {
+  transform: translate(0px, -5px);
+}
+
+.lenguajes {
+  padding-left: 0px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.doc {
+  text-decoration: none;
+}
+
+#foto {
+  background-color: rgba(0, 0, 0, 0.1568627451);
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#foto img {
+  width: 400px;
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+
+footer {
+  margin-top: 140px;
+}/*# sourceMappingURL=about.css.map */

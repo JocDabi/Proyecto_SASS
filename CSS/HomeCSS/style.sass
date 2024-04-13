@@ -1,55 +1,7 @@
-$gradiente: linear-gradient(to bottom right, #151518, #150f35)
-$celeste: #06A7E5
+@import './Modulos/_variables'
+@import './Modulos/_mixins'
+@import './Modulos/_globales'
 
-@mixin boton
-    width: 150px
-    height: 60px
-    border: solid 2px
-    border-radius: 30px 
-    
-
-*
-    box-sizing: border-box
-    margin: 0
-    padding: 0
-
-body
-    width: 100%
-    height: 100vh
-    background-image: $gradiente
-
-body::-webkit-scrollbar
-    width: 10px
-    background-color: #000000
-    border-radius: 10px
-
-
-body::-webkit-scrollbar-thumb 
-    background-color: #33313a
-    border-radius: 10px
-
-
-nav
-    height: 50px
-    margin-top: 20px
-
-#list
-    display: flex
-    justify-content: center
-    gap: 80px
-    list-style-type: none
-    padding-top: 20px
-
-.redi
-    text-decoration: none
-    font: 
-        size: 25px
-        weight:bold
-        family: "Inconsolata", monospace
-    color: white
-
-.redi:hover
-    color: $celeste
 
 #container
     margin-top: 85px
@@ -72,7 +24,7 @@ h1
 #ocupacion
     color: $celeste
     font:
-        family: "Inconsolata", monospace
+        family: "Montserrat", sans-serif
         size: 40px
         weight: bold
     padding-left: 100px
@@ -95,29 +47,50 @@ h1
     margin-top: 30px
     margin-left: 100px
 
-.contacto
+#contrato
     @include boton
-    background-color: #00000000
-    border-color: white
-    cursor: pointer
-
-.contacto:hover
     background-color: $celeste
-    border: none
+    border-color: $celeste
+    cursor: pointer
+    transition: background-color 0.5s
+
+#contrato:hover
+    background-color: #151226
+    border-color: $celeste
+    
+    #a-btn-1
+        color: $celeste
 
 
-.a-btn
+#a-btn-1
         text-decoration: none
-        color: white
+        color: #151226
         font:
             size: 18px
             weight: bold
-            family: "Inconsolata", monospace
+            family: "Montserrat", sans-serif
+
+#contacto
+    @include boton
+    background-color: #151226
+    border-color: $celeste
+    transition: background-color 0.5s
+
+#contacto:hover
+    background-color: $celeste
+    border-color: $celeste
+    cursor: pointer
+    #a-btn-2
+        color: #151226
+
+#a-btn-2
+    @extend #a-btn-1
+    color: $celeste
 
 #pc
     height: 400px
-    padding-bottom: 100px
-    padding-right: 80px
+    padding-bottom: 85px
+    padding-right: 70px
 
 footer
     margin-top: 120px
@@ -148,18 +121,19 @@ footer
     font:
         size: 25px
         weight: bold
-        family: "Inconsolata", monospace
+        family: "Montserrat", sans-serif
     color: $celeste
 
 #container-iconos
     display: flex
     gap: 40px
+    padding-left: 20px
 
 .iconos
     transition: transform 0.5s
 
 .iconos:hover
-    transform:  translate(0px, -5px)
+    @include transformacionIconos
 
 
 #copy
